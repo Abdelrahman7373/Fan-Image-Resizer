@@ -1,0 +1,35 @@
+{
+  "name": "fan-image-resizer",
+  "productName": "Fan Image Resizer",
+  "version": "1.0.0",
+  "description": "App to resize image dimentions",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "fan-image-resizer",
+    "productName": "Fan Image Resizer",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "Icon_256x256.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "Abdelrahman",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.1.1",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  }
+}
