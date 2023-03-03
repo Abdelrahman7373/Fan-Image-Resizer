@@ -35,7 +35,6 @@ function createMainWindow() {
     mainWindow.webContents.openDevTools();
   }
 
-  // mainWindow.loadURL(`file://${__dirname}/renderer/index.html`);
   mainWindow.loadFile(path.join(__dirname, "./renderer/index.html"));
 }
 
@@ -93,16 +92,6 @@ const menu = [
         },
       ]
     : []),
-  // {
-  //   label: 'File',
-  //   submenu: [
-  //     {
-  //       label: 'Quit',
-  //       click: () => app.quit(),
-  //       accelerator: 'CmdOrCtrl+W',
-  //     },
-  //   ],
-  // },
 ];
 
 // Respond to the resize image event
