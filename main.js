@@ -7,11 +7,6 @@ const { app, BrowserWindow, Menu, ipcMain, shell } = require("electron");
 const isDev = process.env.NODE_ENV !== "production";
 const isMac = process.platform === "darwin";
 
-if (isDev) {
-  require("resize-img")(__dirname, {
-    electron: path.join(__dirname, "node_modules", ".bin", "electron"),
-  });
-}
 
 let mainWindow;
 let aboutWindow;
